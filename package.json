@@ -1,0 +1,19 @@
+{
+  "name": "rn-web-storybook",
+  "version": "1.0.0",
+  "scripts": {
+    "storybook": "start-storybook"
+  },
+  "author": "Mike Cripps",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^16.9.49",
+    "@types/react-native": "^0.63.13",
+    "react": "^16.13.1",
+    "react-native": "^0.63.2",
+    "react-native-web": "^0.13.9"
+  },
+  "devDependencies": {
+    "@storybook/react": "^6.0.21"
+  }
+}
