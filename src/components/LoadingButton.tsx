@@ -1,5 +1,5 @@
 import React from 'react';
-import { ActivityIndicator, Button, View, StyleSheet } from 'react-native';
+import { ActivityIndicator, Text, Button, View, StyleSheet } from 'react-native';
 
 interface ButtonProps {
   loading?: boolean;
@@ -11,18 +11,22 @@ const LoadingButton = (props: ButtonProps) => {
   } = props;
 
   return (
-    <View style={styles.container}>
-      <Button
-        title="Loading Button"
-        disabled={loading}
-        onPress={() => { }} />
-      {loading && (
-        <ActivityIndicator
-          style={styles.indicator}
-          animating
-        />
-      )}
+    <View>
+      <Text style={styles.text}>Boton</Text>
+      <View style={styles.container}>
+        <Button
+          title="Loading Button"
+          disabled={loading}
+          onPress={() => { }} />
+        {loading && (
+          <ActivityIndicator
+            style={styles.indicator}
+            animating
+          />
+        )}
+      </View>
     </View>
+
   );
 };
 
@@ -34,6 +38,9 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 8,
     right: 8,
+  },
+  text: {
+    marginBottom: 10,
   }
 })
 
